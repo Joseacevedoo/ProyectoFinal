@@ -1,0 +1,23 @@
+<div class="mb-3">
+    <label for="nameUser" class="col-form-label text-white">Nombre de Usuario:</label>
+    <input type="text" class="form-control right-s-bar" id="nameUser" name="nameUser" 
+    value="<%= post.nameUser  %>" />
+</div>
+<div class="mb-3">
+<label for="userAccount" class="col-form-label text-white">Arroba de Usuario:</label>
+    <input type="text" class="form-control right-s-bar" id="userAccount" name="userAccount">
+    <%= post.userAccount %>
+</input>
+</div>
+<div class="mb-3">
+    <label for="publicationDescription" class="col-form-label text-white">Tweet:</label>
+    <textarea type="text" class="form-control right-s-bar" id="publicationDescription" name="publicationDescription">
+    <%= post.publicationDescription %>
+    </textarea>
+</div>
+
+<div class="mb-3">
+    <label for="image" class="form-label">Seleccionar una imagen</label>
+    <input class="form-control" type="file" id="image" name="image" accept="image/*"> </input>
+</div>
+<button type="submit" class="btn btn-primary">Publicar</button>

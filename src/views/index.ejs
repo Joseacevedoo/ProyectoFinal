@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../public/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" href="../public/assets/logotwittter.png">
+    <script src="https://kit.fontawesome.com/89bac60871.js" crossorigin="anonymous"></script>
+    <title>Twitter</title>
+
+</head>
+<body class="container-fluid bg-black">
+    <div class="container-fluid  container-lg">
+        <nav class="bg-black d-sm-none fixed-bottom">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-3">
+                        <span><i class="bi bi-house-heart-fill fs-2 m-2 p-2 icon-nav"></i></span>
+                    </div>
+                    <div class="col-3">
+                    <span><i class="bi bi-search fs-2 m-2 p-2 icon-nav"></i></span>
+                    </div>
+                    <div class="col-3">
+                    <span><i class="bi bi-bell fs-2 m-2 p-2 icon-nav"></i></span>
+                    </div>
+                    <div class="col-3">
+                    <span><i class="bi bi-envelope fs-2 m-2 p-2 icon-nav"></i></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <div class="row ">
+        <div class=" d-none sticky-top col-sm-2  d-sm-block col-md-2 col-lg-2 d-flex flex-column text-sm-end text-md-start align-items-lg-start border-white border-opacity-25 border-end">
+            <div class="">
+            <span><i class="bi bi-twitter fs-2 py-3 icon-nav"></i></span>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end  justify-content-md-start">
+                <span><i class="bi bi-house-heart-fill fs-3 icon-nav"></i></span>
+                <p class="d-none d-xl-block fs-5 pt-3 ps-2 fw-bold text-white">Inicio</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-search fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white ">Buscar</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-bell fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white">Notificaciones</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-envelope fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white">Mensajes</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-card-list fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white">Listas</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-bookmark fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white">Guardados</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-patch-check fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-3 ps-2 text-white">Verificados</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-person fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-2 ps-2 text-white">Perfil</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                <span><i class="bi bi-three-dots fs-3 icon-nav"></i></span>
+                    <p class="d-none d-xl-block fs-5 pt-2 ps-2 text-white">Más opciones</p>
+            </div>
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button type="button" class="btn rounded-pill btn-box-tw fw-bold text-white">Twittear</button>
+            </div>
+            <div class="row mt-1 align-items-center py-5"> 
+                <div class="col-2"> 
+                    <img class="rounded-circle" src="assets/user-image.jpg" alt="" height="40px">
+                </div>
+                <div class="col"> 
+                    <div class="d-flex align-items-center"> 
+                        <div class="col-11 pt-3 m-3 "> 
+                            <div>
+                                <p>
+                                    <span class="d-xxl-block d-none fw-bold text-white fs-6">Migue Granados<i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="d-xxl-block d-none text-white-50 fs-6">@miguegranados</span>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    <main class="col-10 col-sm-10 col-md-9 col-lg-5 main_bar border-white border-opacity-25 border">
+    <nav class="row d-flex justify-content-between align-items-center ps-1 sticky-top bg-black bg-opacity-75 ">
+        <div class="col-1 pt-4">
+            <div><span class="fs-4 fw-bold text-white">Inicio</span></div>
+        </div>
+        <div class="row pt-4">
+            <span class="col-6 text-center text-white fs-5 fw-bold">Para ti</span>
+            <span class="col-6 text-center text-white fs-5 fw-bold">Siguiendo</span>
+        </div>
+    </nav >
+    <div class="row mt-auto">
+        <div class="col pt-2">
+            <div class="row pt-4 border-white border-opacity-25 border-top d-flex">
+            </div>
+            <div class="container">
+                <button type="button" class="btn rounded-pill btn-box-tw fw-bold fs-6 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Publicar Tweet</button>
+            
+            
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content rounded-4">
+                <div class="modal-header right-s-bar">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nuevo Tweet</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body right-s-bar ">
+                    <form action="/new" method="POST" enctype="multipart/form-data">
+                        <%- include('_form_fields.ejs')%>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <form action="/newfoto" method="POST" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="image" class="form-label">Seleccionar una imagen</label>
+                <input class="form-control" type="file" id="image" name="image" accept="image/*">
+              </div>
+              <button type="submit" class="btn btn-primary">Subir Imagen</button>
+            </form>
+          </div>
+          
+            <% post.forEach(post=> { %>
+            
+            <div class="row mt-1 border-white border-opacity-25 border-top d-flex">
+                <div class="col-1 mt-3">
+                    <img class="rounded-circle" src="<%= post.image%>" alt="<%= post.cloudinary_id%>"alt="" height="40px " >
+                    
+                </div>
+                <div class="col-11 ">
+                    <div class="row d-flex justify-content-between align-items-center ps-lg-1 ps-md-3 ps-3">
+                        <div class="col-10 pt-lg-2 pt-sm-3 pt-md-3 pt-xl-3 pt-3 mb-0 ">
+                            <div>
+                                <p><span class="fw-bold text-white"><%= post.nameUser%> <i class="bi bi-patch-check-fill"></i>
+                                </span><span class="fw-normal text-white-50"> @<%= post.userAccount %><br></span> 
+                                    </p>
+                            </div>
+                        </div><div class="col d-flex justify-content-end" >
+                            <form action="/<%= post.id %>?_method=DELETE" method="POST" enctype="multipart/form-data"  onsubmit="return confirm('¿Estás seguro de que quieres eliminar este tweet?')">
+                <button type="submit" class="btn btn-link text-danger">
+                    <span><i class="bi bi-trash3-fill"></i></span>
+                </button>
+            </form>
+                        </div>
+                        <div class="col d-flex justify-content-end" >
+                            <div data-bs-toggle="modal" data-bs-target="#editModal">
+                                <span><i class="bi bi-three-dots icon-nav"></i></span>
+                            </div>
+                        </div>
+                        <!-- Modal para editar tweet -->
+                    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="editModalLabel">Editar Tweet</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Formulario de edición -->
+                                <form action="/edit/<%= post.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                                    <%- include('_form_fields.ejs')%>
+                                                
+                                            </form>
+                                        </div>
+                            </div>
+                                    </div>             
+                                </div>
+                                        
+                            </div>
+                    
+                    <div class="col text-white m-1 ">
+                        <%= post.publicationDescription %>
+                        
+                        <div class="row pt-2 align-items-center">
+                            <img class="rounded mx-auto d-block margin" src="<%= post.image%>" alt="<%= post.cloudinary_id%>"alt=""  >
+                            <div class="col d-flex align-items-center">
+                                <span><i class="bi bi-chat fs-6 icon"></i></span>
+                                <p class=" badge text-white-50  mb-0 ms-2 opacity-75"><small>1</small></p>
+                            </div>
+                            <div class="col d-flex align-items-center">
+                                <span><i class="fa-solid fa-retweet fs-6 icon"></i></span>
+                                <p class="badge text-white-50 mb-0 mx-2 opacity-75"><small>1</small></p>
+                            </div>
+                            <div class="col d-flex align-items-center">
+                                <span><i class="bi bi-heart fs-6 fw-normal icon"></i></span>
+                                <p class="badge text-white-50 mb-0 mx-0 opacity-75 "><small>7</small> </p>
+                            </div>
+                            <div class="col d-flex align-items-center">
+                                <span><i class="bi bi-bar-chart-fill fs-6 icon"></i></span>
+                                <p class="badge text-white-50 mb-0 opacity-75"><small>1.794</small> </p>
+                            </div>
+                            <div class="col d-flex align-items-center">
+                                <span><i class="bi bi-upload fs-6 icon opacity-75"></i></span>
+                                <p class="badge text-white-50 mb-0 "></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <% })%>
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+        </main>
+
+        <aside class="col-lg-4 d-none d-lg-block w-30 h-30">
+            <div class="sticky-xxl-top">
+                <div class="right-s-bar rounded-pill rounded-4 sticky-top">
+                    <div class="row d-flex align-items-center">
+                        <div class="m-2 col-1 text-start fs-5"> 
+                            <span><i class="bi bi-search"></i></span> 
+                        </div>
+                        <div class="col-7">
+                            <input type="text" class="form-control-lg form-control-plaintext text-white border-0 me-1 w-80 bg-transparent" placeholder="Buscar en Twitter">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row mx-1 right-s-bar my-2 pb-3 rounded-4 first_row">
+                    <div class="col">
+                        <div class="trending">
+                            
+                            <div class="row">
+                                <div class="col-9 p-2">
+                                    <p class="m-1 fw-bold text-white fs-4">Obtener verificación</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <p class="m-0 fw-bold text-white fs-6 p-1">Suscribite para desbloquear nuevas funciones.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn rounded-pill btn-box-tw fw-bold fs-6 text-white">Obtener verificación</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row right-s-bar mx-1 my-2 pb-3 rounded-4">
+                    <div class="col">
+                        <div class="trending">
+                            <p class="fs-4 fw-bold py-2 text-white  ">Qué está pasando</p>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="m-0 text-white-50 fs-6"><small>Tendencia en Argentina</small></p>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-6 fw-bold mb-0 text-white">Esteban Laureano Maradona</p>
+                                    <p class=""></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="m-0 text-white-50"><small>Tendencia en Argentina</small></p>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-6 fw-bold mb-0 text-white">Lolla</p>
+                                    <p class="text-white">3.653 Tweets</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="m-0 text-white-50"><small>Tendencia en Argentina</small></p>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-6 fw-bold mb-0 text-white">23 de la Liga Profesional</p>
+                                    <p class=""></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="m-0 text-white-50"><small>Tendencia en Argentina</small></p>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-6 fw-bold mb-0 text-white">Ladaga</p>
+                                    <p class=" text-white">1.872 Tweets</p>
+                                </div>
+                            </div>
+                            
+                            <span class="mas">Mostrar Mas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row right-s-bar mx-1 my-2 pb-3 rounded-4">
+                    <div class="col">
+                        <div class="trending">
+                            <p class="fs-6 fw-bold py-2 text-white fs-4">A quién Seguir</p>
+                            <div class="row mt-0 align-items-center"> 
+                                <div class="col-auto mt-0 mb-2"> 
+                                    <img class="rounded-circle" src="../public/assets/MauAlbornoz_profile.jpg" alt="userfollow1" height="40px">
+                                </div>
+                                <div class="col-9">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="row mt-1">
+                                            <p>
+                                                <span class="fw-bold text-white">Mauro Albornoz<i class="bi bi-patch-check-fill"></i></span>
+                                                <span class="fw-normal text-white-50"><br>@Mau_Albornoz</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <button type="button" class="btn btn-light rounded-pill fw-bold btn-sm">Seguir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row mt-1 align-items-center"> 
+                                <div class="col-auto "> 
+                                    <img class="rounded-circle" src="../public/assets/prottovalen_user.jpg" alt="userfollow2" height="40px">
+                                </div>
+                                <div class="col-9"> 
+                                    <div class="d-flex align-items-center justify-content-between"> 
+                                        <div class="row mt-2">
+                                            <p><span class="fw-bold text-white">valen<i class="bi bi-patch-check-fill"></i>
+                                            </span><span class="fw-normal text-white-50"><br>@prottovalen</span>
+                                            </span><span class=" badge text-white-50 text-wrap label "><br>Te sigue</span>  
+                                            </p>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <button type="button" class="btn btn-light rounded-pill fw-bold btn-sm">Seguir</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 align-items-center"> 
+                                <div class="col-auto"> 
+                                    <img class="rounded-circle" src="../public/assets/sudamericana_user.jpg" alt="userfollow3" height="40px">
+                                </div>
+                                <div class="col-9"> 
+                                    <div class="d-flex align-items-center justify-content-between"> 
+                                        <div class="row mt-1">
+                                            <p><span class="fw-bold text-white">CONMEBOL Sud...<i class="bi bi-patch-check-fill"></i></span>
+                                                <span class="fw-normal text-white-50"><br>@Sudamericana</span> 
+                                            </p>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <button type="button" class="btn btn-light rounded-pill fw-bold btn-sm">Seguir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="mas">Mostrar Mas</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </aside>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
