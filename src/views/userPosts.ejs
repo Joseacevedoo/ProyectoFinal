@@ -1,0 +1,32 @@
+<!-- views/userPosts.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Posts</title>
+</head>
+<body>
+
+  <h1>User Posts</h1>
+
+  <% if (posts.length > 0) { %>
+    <ul>
+      <% posts.forEach(post => { %>
+        <li>
+          <h2><%= post.nameUser %></h2>
+          <p><%= post.publicationDescription %></p>
+          <img src="<%= post.image %>" alt="<%= post.nameUser %>">
+          
+        </li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No hay posts disponibles para el usuario <%= searchedUser %>.</p>
+  <% } %>
+
+  <a href="/">Volver a la página principal</a>
+
+</body>
+</html>

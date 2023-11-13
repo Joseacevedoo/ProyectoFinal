@@ -9,7 +9,7 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/:slug', (req, res) => {
-    Post.findByIdAndUpdate({ slug: req.params.slug })
+    Post.findOne({ slug: req.params.slug })
         .then((post) => {
             
             if (post) {
@@ -19,7 +19,18 @@ router.get('/:slug', (req, res) => {
             }
         })
 })
+//Filtrar Usuario
+router.get('/user', async (req, res) => {
+    try {
+        const nameUser = req.query.nameUser;
+        const posts = await Post.find({ nameUser: nameUser });
 
+        res.render('userPosts', { posts: posts, searchedUser: nameUser });
+    } catch (err) {
+        console.log(err);
+        res.redirect('/');
+    }
+});
 
 
 router.get("/edit/:id", async(req, res)=>{

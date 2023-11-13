@@ -133,16 +133,8 @@
             </div>
             </div>
         </div>
-        <div class="container mt-4">
-            <form action="/newfoto" method="POST" enctype="multipart/form-data">
-              <div class="mb-3">
-                <label for="image" class="form-label">Seleccionar una imagen</label>
-                <input class="form-control" type="file" id="image" name="image" accept="image/*">
-              </div>
-              <button type="submit" class="btn btn-primary">Subir Imagen</button>
-            </form>
-          </div>
-          
+        
+        
             <% post.forEach(post=> { %>
             
             <div class="row mt-1 border-white border-opacity-25 border-top d-flex">
@@ -253,7 +245,19 @@
                             <span><i class="bi bi-search"></i></span> 
                         </div>
                         <div class="col-7">
-                            <input type="text" class="form-control-lg form-control-plaintext text-white border-0 me-1 w-80 bg-transparent" placeholder="Buscar en Twitter">
+                            <form action="/user" method="GET">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-1 m-2">
+                                        <span><i class="bi bi-search"></i></span>
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="text" class="form-control-lg form-control-plaintext text-white border-0 me-1 w-80 bg-transparent" placeholder="Buscar en Twitter" name="nameUser">
+                                    </div>
+                                    <div class="col-4">
+                                        <button type="submit" class="btn rounded-pill btn-box-tw fw-bold fs-6 text-white">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     
