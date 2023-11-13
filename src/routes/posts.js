@@ -8,17 +8,7 @@ router.get('/new', (req, res) => {
     res.render("new", { post: new Post() })
 })
 
-router.get('/:slug', (req, res) => {
-    Post.findOne({ slug: req.params.slug })
-        .then((post) => {
-            
-            if (post) {
-                res.render("/", { post: post })
-            } else {
-                res.redirect("/")
-            }
-        })
-})
+
 //Filtrar Usuario
 router.get('/user', async (req, res) => {
     try {
@@ -70,10 +60,10 @@ router.put("/edit/:id", upload.single("image"), async (req, res) => {
     try {
         let post = await Post.findById(req.params.id);
 
-        // Elimina la imagen anterior de Cloudinary
+        // Eliminar la imagen anterior de Cloudinary
         await cloudinary.uploader.destroy(post.cloudinary_id);
 
-        // Sube la nueva imagen a Cloudinary
+        // Subir la nueva imagen a Cloudinary
         const result = await cloudinary.uploader.upload(req.file.path);
 
         // Actualiza solo los campos que han cambiado

@@ -19,13 +19,15 @@
           <p><%= post.publicationDescription %></p>
           <img src="<%= post.image %>" alt="<%= post.nameUser %>">
           
+          <!-- Incluye el formulario de campos -->
+          <% include('_form_fields.ejs', { post: post }) %>
         </li>
       <% }); %>
     </ul>
   <% } else { %>
-    <p>No hay posts disponibles para el usuario <%= searchedUser %>.</p>
+    <p>No hay posts disponibles para este usuario.</p>
   <% } %>
-
+  
   <a href="/">Volver a la página principal</a>
 
 </body>
