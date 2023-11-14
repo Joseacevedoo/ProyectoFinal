@@ -1,4 +1,4 @@
-<h2 align="center">Proyecto Final Digitalers</h2>
+<h2 align="left">Proyecto Final Digitalers</h2>
 
 ###
 
